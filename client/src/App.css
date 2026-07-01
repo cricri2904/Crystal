@@ -1,0 +1,13 @@
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 24px;
+  color: var(--wildberry);
+}
+
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--pale-lavender) 0%, var(--cream) 100%);
+}
