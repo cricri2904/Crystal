@@ -1,0 +1,30 @@
+/* Color Theme */
+:root {
+  --wildberry: #8B3A62;
+  --lavender: #B89BB4;
+  --pastel-yellow: #FFE5B4;
+  --light-lavender: #E6D5E0;
+  --pale-lavender: #F0E6F0;
+  --cream: #FFFBF0;
+  --forest-green: #2D5016;
+  --brown: #8B6914;
+  --light-green: #90EE90;
+  --grey: #9B9B9B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5e6ff 0%, #fff9e6 100%);
+  color: #333;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
