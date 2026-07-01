@@ -1,0 +1,99 @@
+.certificate {
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.certificate-inner {
+  background: linear-gradient(135deg, #fff9e6 0%, #f5e6ff 100%);
+  border: 3px solid var(--wildberry);
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(139, 58, 98, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.certificate-inner:hover {
+  transform: translateY(-10px) rotateX(5deg);
+  box-shadow: 0 16px 48px rgba(139, 58, 98, 0.3);
+}
+
+.certificate-inner::before {
+  content: "★";
+  position: absolute;
+  font-size: 100px;
+  color: var(--pastel-yellow);
+  opacity: 0.1;
+  top: -20px;
+  left: 20px;
+  transform: rotate(-15deg);
+}
+
+.certificate-inner::after {
+  content: "★";
+  position: absolute;
+  font-size: 100px;
+  color: var(--pastel-yellow);
+  opacity: 0.1;
+  bottom: -20px;
+  right: 20px;
+  transform: rotate(15deg);
+}
+
+.certificate-header {
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.certificate-header h2 {
+  color: var(--wildberry);
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+.certificate-body {
+  position: relative;
+  z-index: 1;
+  padding: 20px 0;
+}
+
+.certificate-text {
+  color: var(--wildberry);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 0 0 15px 0;
+}
+
+.unlocked-date {
+  color: #999;
+  font-size: 14px;
+  margin: 0;
+}
+
+.certificate-footer {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 2px solid var(--lavender);
+  position: relative;
+  z-index: 1;
+}
+
+.certificate-footer p {
+  color: var(--wildberry);
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .certificate-inner {
+    padding: 30px 20px;
+  }
+
+  .certificate-text {
+    font-size: 16px;
+  }
+}

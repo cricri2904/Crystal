@@ -1,0 +1,45 @@
+.bunny-hill-container {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.hill-svg {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 4px 8px rgba(139, 58, 98, 0.1));
+}
+
+.bunny {
+  animation: hopAnimation 2s ease-in-out infinite;
+}
+
+@keyframes hopAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.checkpoint {
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+
+.checkpoint:hover circle {
+  filter: drop-shadow(0 0 8px rgba(139, 58, 98, 0.5));
+}
+
+.guitar {
+  animation: tiltAnimation 3s ease-in-out infinite;
+}
+
+@keyframes tiltAnimation {
+  0%, 100% {
+    transform: translate(700px, 100px) rotate(0deg);
+  }
+  50% {
+    transform: translate(700px, 100px) rotate(-5deg);
+  }
+}

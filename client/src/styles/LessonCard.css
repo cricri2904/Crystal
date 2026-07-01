@@ -1,0 +1,132 @@
+.lesson-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(139, 58, 98, 0.1);
+  transition: all 0.3s ease;
+  border-left: 5px solid var(--lavender);
+  position: relative;
+}
+
+.lesson-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(139, 58, 98, 0.15);
+}
+
+.lesson-card.completed {
+  background: linear-gradient(135deg, rgba(184, 155, 180, 0.05) 0%, rgba(255, 229, 180, 0.05) 100%);
+  border-left-color: var(--wildberry);
+}
+
+.lesson-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.lesson-header h3 {
+  color: var(--wildberry);
+  margin: 0;
+  font-size: 16px;
+}
+
+.level-badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.level-badge.absolute-beginner {
+  background: #FFE5B4;
+  color: #8B6914;
+}
+
+.level-badge.advanced-beginner {
+  background: #E6D5E0;
+  color: #8B3A62;
+}
+
+.level-badge.intermediate {
+  background: #B89BB4;
+  color: white;
+}
+
+.lesson-card h4 {
+  color: #333;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.song {
+  color: var(--wildberry);
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.objectives {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.objectives li {
+  padding: 5px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.objectives li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--wildberry);
+  font-weight: bold;
+}
+
+.session-time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #999;
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+.completed-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.start-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background: linear-gradient(135deg, var(--wildberry) 0%, #A0466B 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.start-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 58, 98, 0.3);
+}
+
+.lesson-card.completed .start-btn {
+  background: var(--lavender);
+}
